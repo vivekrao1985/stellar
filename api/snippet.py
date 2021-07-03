@@ -31,5 +31,6 @@ def like_snippet(name):
 
 def abort_or_extend(name):
   if name not in dic or dic[name]['expires_at'] < datetime.now():
+    del dic[name]
     abort(404)
   dic[name]['expires_at'] += timedelta(seconds=30)

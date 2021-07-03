@@ -26,3 +26,9 @@ Added a like API endpoint.
 
 Assumptions -
 1. All snippets written to this endpoint can live in memory.
+
+Why flask?
+I've been working with flask over the past few months and find it's really easy to get a project set up and running.
+
+Error handling -
+If a snippet does not exist in the dictionary or it's timestamp has expired, return a 404
